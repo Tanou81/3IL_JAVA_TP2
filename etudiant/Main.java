@@ -18,6 +18,8 @@ class Main {
      brun.ajouterNote(19);
      System.out.println(brun);
       Point point = new Point(1,2);
+    Point point2 = new Point(3,6);
+    point.normeMax(point, point2);
       point.afficher();
       /*
      * System.out.println(seg1.longueur());

@@ -12,7 +12,7 @@ class Point{
     System.out.println ("Coordonnées " + this.x + " " + this.y) ;
   }
 
-  public int normeMax(Point p1, Point p2){
+  public double normeMax(Point p1, Point p2){
     /* 
     int resultx = p2.getX() - p1.getX()
     int resulty = p2.getY() - p1.getY()
@@ -23,7 +23,17 @@ class Point{
     int result1y = p1.getY() - 0 ;
 
     double  dist1 = Math.sqrt(Math.pow(result2x, 2) + Math.pow(result2y, 2)) ;
-     System.out.println ("dist " + dist1) ;
+    double  dist2 = Math.sqrt(Math.pow(result1x, 2) + Math.pow(result1x, 2)) ;
+    System.out.println ("dist 1 " + dist1) ;
+    System.out.println ("dist 2 " + dist2) ;
+    if (dist1>dist2){
+      System.out.println ("dist " + dist1) ;
+      return dist1 ; 
+    }else {
+      System.out.println ("dist " + dist2) ;
+      return dist2 ; 
+    }
+    
   }
 
   public int getX(){
