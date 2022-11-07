@@ -21,6 +21,9 @@ class Point{
     int result2y = p2.getY() - 0 ;
     int result1x = p1.getX() - 0 ;
     int result1y = p1.getY() - 0 ;
+
+    double  dist1 = Math.sqrt(Math.pow(result2x, 2) + Math.pow(result2y, 2)) ;
+     System.out.println ("dist " + dist1) ;
   }
 
   public int getX(){
